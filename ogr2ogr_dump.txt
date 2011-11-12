@@ -1,0 +1,3 @@
+ogr2ogr -f "ESRI Shapefile" travaux_l.shp PG:"host=localhost user=postgres dbname=opendata password=maximus" -sql "select datedebuttravaux,datefintravaux,endroit1,endroit2,arrondissement,emplacement,restriction,naturetravaux,the_geom_l from vq.travaux"
+ogr2ogr -f "ESRI Shapefile" travaux_p.shp PG:"host=localhost user=postgres dbname=opendata password=maximus" -sql "select datedebuttravaux,datefintravaux,endroit1,endroit2,arrondissement,emplacement,restriction,naturetravaux,the_geom_p from vq.travaux"
+
